@@ -1,0 +1,74 @@
+.sliderBody {
+  padding: 10px;
+}
+
+.horz {
+  height: 10px;
+  width: 100%;
+  background-color: #cccccc;
+  opacity: 0.8;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.traversed {
+  height: 10px;
+  width: 0px;
+  background-color: red;
+  opacity: 0.7;
+  border-radius: 5px 0px 0px 5px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.horz:hover {
+  opacity: 1;
+}
+
+.seeker {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: -6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.min {
+  position: absolute;
+  font-family: Verdana;
+  font-weight: bold;
+  color: red;
+  top: 30px;
+  left: -20px;
+}
+
+.max {
+  position: absolute;
+  font-family: Verdana;
+  font-weight: bold;
+  color: red;
+  top: 30px;
+  left: 320px;
+}
+
+.curr {
+  padding: 5px;
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  font-family: Verdana;
+  font-weight: bold;
+  color: black;
+  top: -10px;
+  left: 400px;
+  border: 1px solid black;
+}
