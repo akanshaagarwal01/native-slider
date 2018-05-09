@@ -29,11 +29,11 @@
 
   Slider.prototype.initializeDOMElements = function () {
     this._DOMElements = {
-      seeker: document.getElementById(`seeker${this._id}`),
-      horz: document.getElementById(`horz${this._id}`),
-      min: document.getElementById(`min${this._id}`),
-      max: document.getElementById(`max${this._id}`),
-      traversed: document.getElementById(`traversed${this._id}`)
+      seeker: document.getElementById(`seeker_${this._id}`),
+      horz: document.getElementById(`horz_${this._id}`),
+      min: document.getElementById(`min_${this._id}`),
+      max: document.getElementById(`max_${this._id}`),
+      traversed: document.getElementById(`traversed_${this._id}`)
     };
     console.log(this._DOMElements);
     this._DOMElements.min.innerHTML = this._min;
